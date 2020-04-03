@@ -6,9 +6,10 @@
 	body {background-color:#D5D8DC}
 </style>
 <!-- Test of the branch-->
-<h1 style="color:#3d475c;font-size:75px;font-weight:bold;text-align:left;margin-left:10px">NSW Selective Schools Predictor</h1>	
-<div style="color:#3d475c;font-size:15px;font-weight:normal;text-align:left;margin-left:14px">A volunteer project of <a href="https://www.code.sydney" target="_blank">Code.Sydney</a></div>	  
-
+<h1 style="color:#3d475c;font-size:85px;font-weight:bold;text-align:center;margin-left:10px">Zoned</h1>	
+<div style="color:#3d475c;font-size:15px;font-weight:normal;text-align:center;margin-left:14px">StayHomeHack entry of <a href="https://www.code.sydney" target="_blank">Code.Sydney</a></div>	  
+	  <br/>
+	  <br/>
       <form action = "" method="POST" name="mainform">
          <fieldset>
             <br>
@@ -29,78 +30,11 @@
 				  }
 				</style>
 						
-            <div style = "font-size:25px;font-weight:normal;text-align:left;margin-left:15px">
-			   <h1>Total Computed Score is <span class='score'>{{ Total_Score }}</span></h1>			
-			   <div style = "color:#616A6B;font-size:12px;margin-left:15px;font-style:italic;">Please be reminded that this is just an indicative score.</div>
-			   
-   	           <h2 style="color:#3d475c;font-size:40px;font-weight:bold;text-align:left;margin-left:10px">Home Address</h2>
-			   <div style="font-size:20px;font-weight:normal;text-align:left;margin-left:10px">{{HomeAddress}}</div><br>
-
-   	           <h2 style="color:#3d475c;font-size:40px;font-weight:bold;text-align:left;margin-left:10px">Student's Grades</h2>
-			   
-			   <table style="font-size:20px;width:40%;text-align:left;margin-left:10px;font-weight:normal">
-			   <tr>
-   			      <td>English School Assessment</td>
-				  <td>{{ School_English }}</td>
-			   </tr>	
-			   <tr>
-   			      <td>Mathematics School Assessment</td>
-				  <td>{{ School_Maths }}</td>
-			   </tr>	
-			   <tr>
-   			      <td>English Examination Score</td>
-				  <td>{{ ExaminationScores_English }}</td>
-			   </tr>				   
-			   <tr>
-   			      <td>Mathematics Examination Score</td>
-				  <td>{{ ExaminationScores_Maths }}</td>
-			   </tr>				   
-			   <tr>
-   			      <td>General Ability Examination Score</td>
-				  <td>{{ ExaminationScores_GA }}</td>
-			   </tr>				   
-			   <tr>
-   			      <td>Writing Examination Score</td>
-				  <td>{{ ExaminationScores_Writing }}</td>
-			   </tr>							   
-			   </table>
-
-			   <h2 style="color:#3d475c;font-size:40px;font-weight:bold;text-align:left;margin-left:10px">Predicted Selective Schools List</h2>
-			   <table style="font-size:20px;width:90%;text-align:left;font-weight:normal;margin-left:10px" border="1">
-			   <tr>
-   			      <th>School Name</th>
-				  <th>Entry Score</th>
-				  <th>Website</th>
-				  <th>Distance from Home</th>
-			   </tr>				   		
-			   			   
-			   {% for school in school_list %}
-			   <tr>
-   			      <td>{% print school[0] %}</td>
-				  <td>{% print school[1] %}</td>
-				  <td><a href="{% print 'http://',school[2] %}" target="_blank">{% print school[2] %}</a></td>
-				  <td>{% print school[3] %} kms</td>
-			   </tr>
-			   {% endfor %}               
-			   <br> 
-			   <br> 
-			   </table>
-               <div style="color:#3d475c;font-size:15px;font-weight:normal;text-align:left;margin-left:14px">Minimum scores were based on year 2017 entry.</div>                          
-               <div style="color:#3d475c;font-size:15px;font-weight:normal;text-align:left;margin-left:14px">Visit <a href="https://education.nsw.gov.au/selective-high-schools-and-opportunity-classes/year-7" target="_blank">NSW Department of Education</a> website to learn more.</div>                          
-               <br>
-                                             
-               <div style = "margin-left:10px">               
-			   {{ resultform.Submit2 }}
-			   </div>
+            <div style = "font-size:25px;font-weight:normal;text-align:center;margin-left:15px">			   
+   	           <h2 style="color:#3d475c;font-size:40px;font-weight:bold;text-align:center;margin-left:10px">Home Address</h2>
+			   <div style="font-size:30px;font-weight:normal;text-align:center;margin-left:10px">{{HomeAddress}}</div><br>
             </div>
             
          </fieldset>
       </form>
-<br>
-<br>
-<br>
-<br>
-<br>
-<div style="color:#3d475c;font-size:15px;font-weight:normal;text-align:left;margin-left:14px">This work is licensed under a <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution License</a></div>	  	  
-	  
 {% endblock %}

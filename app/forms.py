@@ -6,16 +6,8 @@ from wtforms.validators import DataRequired
 from werkzeug.datastructures import MultiDict
 
 class MainForm(Form):
-	SchoolAssessmentTitle = StringField("School Assessment")
-	School_English = IntegerField('English', [validators.Required("Please enter your English school assessment.")],render_kw={"placeholder": "","size":"10"})	
-	School_Maths = IntegerField('Mathematics', [validators.Required("Please enter your Maths school assessment.")],render_kw={"placeholder": "","size":"10"})	
-	ExaminationScoresTitle = StringField("Examination Scores")
-	ExaminationScores_English = IntegerField('Reading', [validators.Required("Please enter your English exam score.")],render_kw={"placeholder": "","size":"10"})	
-	ExaminationScores_Maths = IntegerField('Mathematics', [validators.Required("Please enter your Maths exam score.")],render_kw={"placeholder": "","size":"10"})
-	ExaminationScores_GA = IntegerField('General Ability', [validators.Required("Please enter your GA exam score.")],render_kw={"placeholder": "","size":"10"})
-	ExaminationScores_Writing = IntegerField('Writing', [validators.Required("Please enter your Writing exam score.")],render_kw={"placeholder": "","size":"10"})
 	HomeAddressTitle = StringField("My Home Address")		
-	HomeAddress = StringField('Home Address', [validators.Required("Please enter suburb or home address.")],render_kw={"placeholder": "Search for your suburb or home address","id":"geocomplete","size":"75"})	
+	HomeAddress = StringField('Home Address', [validators.Required("Please enter suburb or home address.")],render_kw={"placeholder": "Enter your address","id":"geocomplete","size":"60"})	
 	HomeLat = HiddenField(render_kw={"id":"home_lat"})	
 	HomeLng = HiddenField(render_kw={"id":"home_lng"})		
 	Submit1 = SubmitField('Submit',render_kw={"size":"90"})	    

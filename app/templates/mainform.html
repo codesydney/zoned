@@ -17,75 +17,18 @@
 	body {background-color:#D5D8DC}
 </style>
 
-<h1 style="color:#3d475c;font-size:75px;font-weight:bold;text-align:left;margin-left:10px">NSW Selective Schools Predictor</h1>	  
-<div style="color:#3d475c;font-size:15px;font-weight:normal;text-align:left;margin-left:14px">A volunteer project of <a href="https://www.code.sydney" target="_blank">Code.Sydney</a></div>	  
-
-      <div style="font-size:20px;text-align:left;margin-left:10px;color:red">
-      {% for message in form.School_English.errors %}
-         <div>{{ message }}</div>
-      {% endfor %}
-      
-      {% for message in form.School_Maths.errors %}
-         <div>{{ message }}</div>
-      {% endfor %}
-      
-      {% for message in form.ExaminationScores_English.errors %}
-         <div>{{ message }}</div>
-      {% endfor %}
-      
-      {% for message in form.ExaminationScores_Maths.errors %}
-         <div>{{ message }}</div>
-      {% endfor %}
-      
-      {% for message in form.ExaminationScores_GA.errors %}
-         <div>{{ message }}</div>
-      {% endfor %}
-      
-      {% for message in form.ExaminationScores_Writing.errors %}
-         <div>{{ message }}</div>
-      {% endfor %}
-	  
-	  {% for message in form.HomeAddress.errors %}
-         <div">{{ message }}</div>
-      {% endfor %}
-      </div> 	  
-	  
+<h1 style="color:#3d475c;font-size:85px;font-weight:bold;text-align:center;margin-left:10px">Zoned</h1>	
+<div style="color:#3d475c;font-size:15px;font-weight:normal;text-align:center;margin-left:14px">StayHomeHack entry of <a href="https://www.code.sydney" target="_blank">Code.Sydney</a></div>	  
+	  <br/>
+	  <br/>
       <form action = "" method="POST" name="mainform">
            <fieldset>
             <br>
             {{ form.hidden_tag() }}
             
-            <div style = "font-size:30px;font-weight:normal;text-align:left;margin-left:10px">
-			   <h2 style="color:#3d475c;font-size:40px;font-weight:bold;text-align:left">School Assessment</h2>			  			   
-        	   
-   			   {{ form.School_English.label }}<br>
-			   {{ form.School_English }}
-			   <div style = "color:#616A6B;font-size:12px;">Highest is 100</div>
-			   
-			   {{ form.School_Maths.label }}<br>
-			   {{ form.School_Maths }}
-			   <div style = "color:#616A6B;font-size:12px;">Highest is 100</div>
-			   			   			    			   			   
-			   <h2 style="color:#3d475c;font-size:40px;font-weight:bold;text-align:left">Examination Scores</h2>			  
-
-			   {{ form.ExaminationScores_English.label }}<br>
-			   {{ form.ExaminationScores_English }}
-			   <div style = "color:#616A6B;font-size:12px;">Highest is 100</div>			   
-
-			   {{ form.ExaminationScores_Maths.label }}<br>
-			   {{ form.ExaminationScores_Maths }}
-			   <div style = "color:#616A6B;font-size:12px;">Highest is 100</div>			   
-
- 			   {{ form.ExaminationScores_GA.label }}<br>
-			   {{ form.ExaminationScores_GA }}
-			   <div style = "color:#616A6B;font-size:12px;">Highest is 100</div>			   
-
- 			   {{ form.ExaminationScores_Writing.label }}<br>
-			   {{ form.ExaminationScores_Writing }}
-			   <div style = "color:#616A6B;font-size:12px;">Highest is 100</div>			   
-			   			   			  
+            <div style = "font-size:30px;font-weight:normal;text-align:center;margin-left:10px">
 			  <body>			  
-   			    <h2 style="color:#3d475c;font-size:40px;font-weight:bold;text-align:left">My Home Address</h2>			  				
+   			    <h2 style="color:#3d475c;font-size:40px;text-align:center">Home Address</h2>			  				
 				<div>
 				<form>
                  {{ form.HomeAddress }}					 				 
@@ -96,7 +39,7 @@
 
 				{% block scripts %}								
 				{{super()}}
-				<script src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDF717x9JS9ixAmsn1vJnElLfWn20BgKcM&sensor=false&amp;libraries=places"></script>
+				<script src="http://maps.googleapis.com/maps/api/js?key=999999999&sensor=false&amp;libraries=places"></script>				
 				<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 				<script type="text/javascript" src="{{ url_for('static', filename='jquery.geocomplete.js') }}"></script>
 				<script type="text/javascript" src="{{ url_for('static', filename='logger.js') }}"></script>
@@ -127,12 +70,4 @@
 			  
             </div>          
       </form>
-	  
-<br>
-<br>
-<br>
-<br>
-<br>
-<div style="color:#3d475c;font-size:15px;font-weight:normal;text-align:left;margin-left:14px">This work is licensed under a <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution License</a></div>	  	  
-
 {% endblock %}
