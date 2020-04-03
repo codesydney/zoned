@@ -1,2 +1,2 @@
-# myselective
-This app helps Sydney mums and dads in determining the chances of their child getting into a selective school.
+# zoned
+This is Code.Sydney's entry to StayHomeHack hackathon held on 3-6 April 2020.
