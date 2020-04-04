@@ -17,8 +17,17 @@
 	body {background-color:#fdfdfd}
 </style>
 
-<h1 style="color:#3d475c;font-size:85px;font-weight:bold;text-align:center;margin-left:10px">Zoned</h1>	
-<div style="color:#3d475c;font-size:20px;font-weight:normal;text-align:center;margin-left:14px">StayHomeHack entry of <a href="https://www.code.sydney" target="_blank">Code.Sydney</a></div>	  
+<style>
+	.aligncenter {
+		text-align: center;
+	}
+</style>
+
+<p class="aligncenter">
+	<img src="./static/img/002-virus.png" alt="Logo" style="width:200px;height:200px;">
+</p>
+<h1 style="color:#454b52;font-size:85px;font-weight:bold;text-align:center;margin-left:10px">zoned</h1>	
+<div style="color:#71849d;font-size:20px;font-weight:normal;text-align:center;margin-left:14px">StayHomeHack entry of <a href="https://www.code.sydney" target="_blank">Code.Sydney</a></div>	  
 	  <br/>
 	  <br/>
       <form action = "" method="POST" name="mainform">
@@ -39,8 +48,8 @@
 
 				{% block scripts %}								
 				{{super()}}
-                <script src="http://maps.googleapis.com/maps/api/js?key=999999&sensor=false&amp;libraries=places"></script>                
-				<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+                <script src="https://maps.googleapis.com/maps/api/js?key=999&sensor=false&amp;libraries=places"></script>                
+				<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 				<script type="text/javascript" src="{{ url_for('static', filename='jquery.geocomplete.js') }}"></script>
 				<script type="text/javascript" src="{{ url_for('static', filename='logger.js') }}"></script>
 			   
