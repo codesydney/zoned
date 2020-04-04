@@ -3,8 +3,21 @@
 {% block content %}
 
 <style>
-	body {background-color:#D5D8DC}
+	body {background-color:#fdfdfd}
 </style>
+
+<style>
+	table {
+	  border-collapse: collapse;
+	  width: 100%;
+	}
+	th, td {
+	  text-align: left;
+	  padding: 8px;
+	}
+	tr:nth-child(even) {background-color: #f2f2f2;}
+</style>
+
 <!-- Test of the branch-->
 <h1 style="color:#3d475c;font-size:85px;font-weight:bold;text-align:center;margin-left:10px">Zoned</h1>	
 <div style="color:#3d475c;font-size:20px;font-weight:normal;text-align:center;margin-left:14px">StayHomeHack entry of <a href="https://www.code.sydney" target="_blank">Code.Sydney</a></div>	  
@@ -29,15 +42,162 @@
 					font-weight:bold; 
 				  }
 				</style>
-						
+
             <div style = "font-size:25px;font-weight:normal;text-align:center;margin-left:15px">			   
-   	           <h2 style="color:#3d475c;font-size:40px;font-weight:bold;text-align:center;margin-left:10px">Home Address</h2>
-			   <div style="font-size:30px;font-weight:normal;text-align:center;margin-left:10px">{{HomeAddress}}</div><br>
+				<h2 style="color:#3d475c;font-size:40px;text-align:center">Home Address</h2>			  				
+				<div style="font-size:30px;font-weight:normal;text-align:center;margin-left:10px">{{HomeAddress}}</div>
+				<br/>
+				<br/>
+				<section class="showcase">
+					<div class="container-fluid p-0">
+						<div class="row no-gutters">
+							<div class="col-lg-6 my-auto order-lg-1 showcase-text">
+								<table style="width:100%">
+									<tr>
+									  <th colspan="2" bgcolor="#2F294D"><h2 align="center" style="color:#f2f2f2;">Covid-19 Count</h2></th>
+									</tr>
+									<tr>
+									  <td align="left">Count</td>
+									  <td align="right">50</td>
+									</tr>
+									<tr>
+									  <td align="left">Count</td>
+									  <td align="right">94</td>
+									</tr>
+									<tr>
+										<td align="left">Count</td>
+										<td align="right">94</td>
+									</tr>
+									<tr>
+										<td align="left">Count</td>
+										<td align="right">94</td>
+									</tr>
+								</table>							</div>
+							<div class="col-lg-6 my-auto order-lg-1 showcase-text">
+								<table style="width:100%">
+									<tr>
+										<th colspan="2" bgcolor="#C6C600"><h2 align="center" style="color:#f2f2f2;">Covid-19 Count</h2></th>
+									</tr>
+									<tr>
+									  <td align="left">Count</td>
+									  <td align="right">50</td>
+									</tr>
+									<tr>
+									  <td align="left">Count</td>
+									  <td align="right">94</td>
+									</tr>
+									<tr>
+										<td align="left">Count</td>
+										<td align="right">94</td>
+									</tr>
+									<tr>
+										<td align="left">Count</td>
+										<td align="right">94</td>
+									</tr>
+								</table>
+							</div>
+						</div>
+						<div class="row no-gutters">
+							<div class="col-lg-6 my-auto order-lg-1 showcase-text">
+								<table style="width:100%">
+									<tr>
+										<th colspan="2" bgcolor="#756565"><h2 align="center" style="color:#f2f2f2;">Covid-19 Count</h2></th>
+									</tr>
+									<tr>
+									  <td align="left">Count</td>
+									  <td align="right">50</td>
+									</tr>
+									<tr>
+									  <td align="left">Count</td>
+									  <td align="right">94</td>
+									</tr>
+									<tr>
+										<td align="left">Count</td>
+										<td align="right">94</td>
+									</tr>
+									<tr>
+										<td align="left">Count</td>
+										<td align="right">94</td>
+									</tr>
+								</table>							</div>
+							<div class="col-lg-6 my-auto order-lg-1 showcase-text">
+								<table style="width:100%">
+									<tr>
+										<th colspan="2" bgcolor="#701358"><h2 align="center" style="color:#f2f2f2;">Covid-19 Count</h2></th>
+									</tr>
+									<tr>
+									  <td align="left">Count</td>
+									  <td align="right">50</td>
+									</tr>
+									<tr>
+									  <td align="left">Count</td>
+									  <td align="right">94</td>
+									</tr>
+									<tr>
+										<td align="left">Count</td>
+										<td align="right">94</td>
+									</tr>
+									<tr>
+										<td align="left">Count</td>
+										<td align="right">94</td>
+									</tr>
+								</table>							</div>
+						</div>
+						<div class="row no-gutters">
+							<div class="col-lg-6 my-auto order-lg-1 showcase-text">
+								<table style="width:100%">
+									<tr>
+										<th colspan="2" bgcolor="#567956"><h2 align="center" style="color:#f2f2f2;">Covid-19 Count</h2></th>
+									</tr>
+									<tr>
+									  <td align="left">Count</td>
+									  <td align="right">50</td>
+									</tr>
+									<tr>
+									  <td align="left">Count</td>
+									  <td align="right">94</td>
+									</tr>
+									<tr>
+										<td align="left">Count</td>
+										<td align="right">94</td>
+									</tr>
+									<tr>
+										<td align="left">Count</td>
+										<td align="right">94</td>
+									</tr>
+								</table>							</div>
+							<div class="col-lg-6 my-auto order-lg-1 showcase-text">
+								<table style="width:100%">
+									<tr>
+										<th colspan="2" bgcolor="#8B8291"><h2 align="center" style="color:#f2f2f2;">Covid-19 Count</h2></th>
+									</tr>
+									<tr>
+									  <td align="left">Count</td>
+									  <td align="right">50</td>
+									</tr>
+									<tr>
+									  <td align="left">Count</td>
+									  <td align="right">94</td>
+									</tr>
+									<tr>
+										<td align="left">Count</td>
+										<td align="right">94</td>
+									</tr>
+									<tr>
+										<td align="left">Count</td>
+										<td align="right">94</td>
+									</tr>
+								</table>							</div>
+							</div>
+						</div>
+					</section>
+
    			   <div style = "margin-left:10px">               
 				{{ resultform.Submit2 }}
 			   </div>
 			</div>
 
          </fieldset>
-      </form>
+	  </form>
+
 {% endblock %}
