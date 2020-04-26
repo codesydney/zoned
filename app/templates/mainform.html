@@ -48,14 +48,17 @@
 				</form>
 				</div>
 
+				<!--
 				{% block scripts %}								
 				{{super()}}
-                <script src="https://maps.googleapis.com/maps/api/js?key=999&sensor=false&amp;libraries=places"></script>                
+				<!-- Google Places API
+                <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZhybb_43yo1a1sX30zbd_rriE8MZALSM&sensor=false&amp;libraries=places"></script>                
 				<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 				<script type="text/javascript" src="{{ url_for('static', filename='jquery.geocomplete.js') }}"></script>
 				<script type="text/javascript" src="{{ url_for('static', filename='logger.js') }}"></script>
-			   
+	     		
 				<script>
+				/*
 				  $(function(){
 					
 					$("#geocomplete").geocomplete({country: 'AUS'})
@@ -71,9 +74,11 @@
 						$.log("Multiple: " + results.length + " results found");
 					  });    			  
 				  });
-		
+				  */
 				</script>
-				{% endblock %}				
+				{% endblock %}	
+			    -->
+
 			  </body>    
 			  <br> 
 			  {{ form.Submit1 }}

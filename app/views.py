@@ -11,7 +11,6 @@ Bootstrap(app)
 def index():
 	form = MainForm()
 	resultform = ResultForm()
-	
 	if form.validate_on_submit() and form.Submit1.data:
 		HomeAddress = form.HomeAddress.data
 		HomeLat = form.HomeLat.data
